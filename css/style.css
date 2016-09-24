@@ -1,0 +1,143 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 1700px;
+    margin: 0 auto;
+/*    background-color: #9b9393;*/
+}
+
+/*~~~~ HEADER ~~~~*/
+
+header {
+    margin-bottom: 30px;
+}
+.nav-wrapper {
+    width: 1500px; /*Спорно.  */
+    position: absolute;
+    z-index: 2;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+
+}
+.nav-wrapper .logo {
+    float: left;
+}
+.nav-wrapper nav {
+    float: right;
+}
+
+.nav-wrapper a {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 75px;
+    margin-top: 40px;
+}
+.nav-wrapper .attention {
+    color: #f84545
+}
+.abbreviation {
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+    top: 387px;
+    left: 50%;
+    transform: translateX(-50%)
+    
+}
+.abbreviation h1 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.6em;
+}
+.abbreviation a {
+    color: #f84545;
+    font-size: 30px;
+    line-height: 75px;
+    font-weight: 700;
+    letter-spacing: 0.6em;
+    text-decoration: none;
+}
+header .slider {
+    position: relative;
+/*    top: -130px;*/
+/*    z-index: 1;*/
+    background-color: #7f7f7d;
+}
+
+/*~~~~ BODY TILES ~~~~*/
+.body-tiles {
+    width: 1500px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.body-tiles .brands {
+    margin-bottom: 53px;
+    position: relative;
+    
+}
+.body-tiles .brand-info {
+    position: absolute;
+    z-index: 1;
+    bottom: 40px;
+    left: 40px;
+}
+.body-tiles h2 {
+    margin: 0;
+    margin-top: 35px;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #fff;
+}
+.brand-1 h2 {
+    font-size: 60px;
+    bottom: 60px;
+    left: 60px;
+    margin-top: 40px;
+}
+.brand-1 .brand-info {
+    bottom: 60px;
+    left: 60px;
+}
+.brands {
+    position: relative;
+}
+.body-tiles .brand-1 {
+    float: left;
+}
+.body-tiles .brand-2 {
+    float: right;
+}
+.body-tiles .brand-3 {
+    float: right;
+}
+.body-tiles .brand-4 {
+    float: left;
+    margin-right: 57px;
+}
+.body-tiles .brand-5 {
+    float: left;
+    margin-right: 57px;
+}
+.body-tiles .brand-6 {
+    float: left;
+}
+
