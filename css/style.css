@@ -141,3 +141,57 @@ header .slider {
     float: left;
 }
 
+/*~~~~ INSTAGRAM ~~~~*/
+
+.instagram {
+    position: relative;
+    width: 1700px;
+    font-size: 0;
+}
+.insta-foto {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.insta-foto {
+    display: inline-block;
+    cursor: pointer;
+
+    background-color: #1a1a1a;
+}
+.insta-foto>img {
+    transform: scale(1);
+    transition: 0.2s;
+    opacity: 0.5;
+}
+.insta-foto:hover>img {
+    transform: scale(1.1);
+    opacity: 1;
+    transition: 0.3s;
+}
+.inst-hashtag {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 285px;
+/*    right: 50%;*/
+/*    transform: translateX(50%)*/
+}
+.inst-hashtag h3 {
+    font-size: 60px;
+    line-height: 70px;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.6em;
+}
+.inst-hashtag a {
+    font-size: 30px;
+    line-height: 75px;
+    color: #f84545;
+    font-weight: 700;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
