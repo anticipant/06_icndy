@@ -119,6 +119,14 @@ header .slider {
 }
 .brands {
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.brands>img {
+    transition: 0.3s;
+}
+.brands:hover>img {
+    transform: scale(1.1);
 }
 .body-tiles .brand-1 {
     float: left;
@@ -156,10 +164,11 @@ header .slider {
 }
 .insta-foto {
     display: inline-block;
-    cursor: pointer;
+/*    cursor: pointer;*/
 
     background-color: #1a1a1a;
 }
+/*
 .insta-foto>img {
     transform: scale(1);
     transition: 0.2s;
@@ -170,6 +179,7 @@ header .slider {
     opacity: 1;
     transition: 0.3s;
 }
+*/
 .inst-hashtag {
     width: 100%;
     text-align: center;
@@ -193,5 +203,45 @@ header .slider {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+/*~~~~ FOOTER ~~~~*/
+footer {
+    width: 1500px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+.footer-nav {
+    display: inline-block;
+    width: 71%;
+}
+.footer-nav a {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 700;
+    letter-spacing: 0.35em;
+    color: #1a1a1a;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.footer-nav a:last-of-type {
+    margin-right: 0;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    width: 28%;
+    display: inline-block;
+    text-align: right;
+    
+}
+.social-btn {
+    margin-left: 40px;
 }
 
