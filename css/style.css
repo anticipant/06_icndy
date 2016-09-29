@@ -97,7 +97,7 @@ header .slider {
     bottom: 40px;
     left: 40px;
 }
-.body-tiles h2 {
+.body-tiles h2 a {
     margin: 0;
     margin-top: 35px;
     font-size: 40px;
@@ -106,6 +106,10 @@ header .slider {
     letter-spacing: 0.4em;
     text-transform: uppercase;
     color: #fff;
+    text-decoration: none;
+}
+.body-tiles h2 a:hover {
+    text-shadow: 2px 2px 1px black;
 }
 .brand-1 h2 {
     font-size: 60px;
@@ -119,7 +123,6 @@ header .slider {
 }
 .brands {
     position: relative;
-    cursor: pointer;
     overflow: hidden;
 }
 .brands>img {
@@ -150,7 +153,9 @@ header .slider {
 }
 
 /*~~~~ INSTAGRAM ~~~~*/
-
+.instagram-opacity .insta-foto img {
+    opacity: 0.5;
+}
 .instagram {
     position: relative;
     width: 1700px;
@@ -163,6 +168,7 @@ header .slider {
     
 }
 .insta-foto {
+    
     display: inline-block;
 /*    cursor: pointer;*/
 
