@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;    
     padding: 0;
-    width: 1900px;
+/*    width: 1900px;*/
 
 }
 .wrapper {
@@ -193,20 +193,16 @@ header .slider {
 }
 .instagram {
     position: relative;
-    width: 1700px;
+    width: 100%;
     font-size: 0;
+    margin: 0 auto;
 }
 .insta-foto {
+    width: 25%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
-}
-.insta-foto {
-    
     display: inline-block;
-/*    cursor: pointer;*/
-
     background-color: #1a1a1a;
 }
 .inst-hashtag {
@@ -236,9 +232,10 @@ header .slider {
 
 /*~~~~ FOOTER ~~~~*/
 footer {
-    width: 1500px;
-    margin-right: 100px;
-    margin-left: 100px;
+    width: 88.23529411764706%;  /*  1500/1700  */
+    margin-right: 5.882352941176471%;  /*  100/1700  */
+    margin-left: 5.882352941176471%;  /*  100/1700  */
+    font-size: 0;
 }
 .footer-nav {
     display: inline-block;
@@ -253,7 +250,7 @@ footer {
     color: #1a1a1a;
     text-decoration: none;
     text-transform: uppercase;
-    margin-right: 70px;
+    margin-right: 6.572769953051643%;  /*  70/1065  */
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -265,13 +262,13 @@ footer {
 }
 
 .social {
-    width: 28%;
+    width: 29%;
     display: inline-block;
     text-align: right;
     
 }
 .social-btn {
-    margin-left: 40px;
+    margin-left: 9.195402298850575%;  /*  40/435  */
     opacity: .7;
 }
 .social-btn:hover {
