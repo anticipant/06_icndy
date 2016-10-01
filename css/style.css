@@ -1,3 +1,6 @@
+img {
+    vertical-align: top;
+}
 .clearfix:after {
     content: "";
     display: block;
@@ -6,23 +9,31 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    width: 1700px;
+    margin: 0;    
+    padding: 0;
+    width: 1900px;
+
+}
+.wrapper {
+    width: 89.33263268523384%; /*  1700/1903  */
     margin: 0 auto;
-/*    background-color: #9b9393;*/
 }
 
 /*~~~~ HEADER ~~~~*/
 
 header {
     margin-bottom: 30px;
+    position: relative;
+    
 }
 .nav-wrapper {
-    width: 1500px; /*Спорно.  */
+    width: 88.23529411764706%; /* 1500/1700*/
+    margin-right: 5.882352941176471%; /*100/1700*/
+    margin-left: 5.882352941176471%; /*100/1700*/
+    margin-top: 40px;
     position: absolute;
     z-index: 2;
-    margin-right: 100px;
-    margin-left: 100px;
-    margin-top: 40px;
+    
 
 }
 .nav-wrapper .logo {
@@ -30,6 +41,7 @@ header {
 }
 .nav-wrapper nav {
     float: right;
+    width: 57%; /*  850/1500  */
 }
 
 .nav-wrapper a {
@@ -42,7 +54,7 @@ header {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
-    margin-left: 75px;
+    margin-left: 8.823529411764706%;  /*  75/850  */
     margin-top: 40px;
 }
 .nav-wrapper .attention {
@@ -81,21 +93,25 @@ header .slider {
 
 /*~~~~ BODY TILES ~~~~*/
 .body-tiles {
-    width: 1500px;
-    margin-right: 100px;
-    margin-left: 100px;
+    width: 88.23529411764706%; /* 1500/1700*/
+    margin-right: 5.882352941176471%; /*100/1700*/
+    margin-left: 5.882352941176471%; /*100/1700*/
     margin-top: 40px;
+    font-size: 0;
 }
+
 .body-tiles .brands {
     margin-bottom: 53px;
     position: relative;
-    
+    overflow: hidden;
 }
 .body-tiles .brand-info {
     position: absolute;
     z-index: 1;
-    bottom: 40px;
-    left: 40px;
+    left: 8.658008658008658%;  /*  40/462  */
+}
+.brand-1 .brand-info {
+    left: 6.109979633401222%;  /* 60/982  */
 }
 .body-tiles h2 a {
     margin: 0;
@@ -113,44 +129,63 @@ header .slider {
 }
 .brand-1 h2 {
     font-size: 60px;
-    bottom: 60px;
-    left: 60px;
     margin-top: 40px;
 }
-.brand-1 .brand-info {
-    bottom: 60px;
-    left: 60px;
-}
-.brands {
-    position: relative;
-    overflow: hidden;
-}
+
 .brands>img {
     transition: 0.3s;
 }
 .brands:hover>img {
     transform: scale(1.1);
 }
+
 .body-tiles .brand-1 {
     float: left;
+    width: 65.46666666666667%;  /*  982/1500  */
+    background-color: #a08e8e;  /* without img  */
 }
 .body-tiles .brand-2 {
     float: right;
+    width: 30.8%;  /*  462/1500  */
+    background-color: #a08e8e;  /* without img  */
 }
 .body-tiles .brand-3 {
     float: right;
+    width: 30.8%;  /*  462/1500  */
+    background-color: #a08e8e;  /* without img  */
 }
 .body-tiles .brand-4 {
     float: left;
-    margin-right: 57px;
+    margin-right: 3.8%;  /*  57/1500  */
+    width: 30.8%;  /*  462/1500  */
+    background-color: #a08e8e; /* without img  */
 }
 .body-tiles .brand-5 {
     float: left;
-    margin-right: 57px;
+    margin-right: 3.8%;  /*  57/1500  */
+    width: 30.8%;  /*  462/1500  */
+    background-color: #a08e8e; /* without img  */
 }
 .body-tiles .brand-6 {
     float: left;
+    width: 30.8%;  /*  463/1500  */
+    background-color: #a08e8e; /* without img  */
 }
+
+.brand-1 .brand-info {
+    bottom: 7.731958762886598%;  /*  60/776  */
+}
+.brand-2 .brand-info,
+.brand-3 .brand-info {
+    bottom: 11.11111111111111%;  /*  40/360  */
+}
+.brand-4 .brand-info,
+.brand-5 .brand-info,
+.brand-6 .brand-info {
+    bottom: 6.896551724137931%;  /*  40/580  */
+}
+
+
 
 /*~~~~ INSTAGRAM ~~~~*/
 .instagram-opacity .insta-foto img {
@@ -174,18 +209,6 @@ header .slider {
 
     background-color: #1a1a1a;
 }
-/*
-.insta-foto>img {
-    transform: scale(1);
-    transition: 0.2s;
-    opacity: 0.5;
-}
-.insta-foto:hover>img {
-    transform: scale(1.1);
-    opacity: 1;
-    transition: 0.3s;
-}
-*/
 .inst-hashtag {
     width: 100%;
     text-align: center;
@@ -249,5 +272,9 @@ footer {
 }
 .social-btn {
     margin-left: 40px;
+    opacity: .7;
+}
+.social-btn:hover {
+    opacity: 1;
 }
 
