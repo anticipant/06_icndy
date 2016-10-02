@@ -11,7 +11,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;    
     padding: 0;
-/*    width: 1900px;*/
+    width: 1900px;
 
 }
 .wrapper {
@@ -265,6 +265,8 @@ footer {
     width: 29%;
     display: inline-block;
     text-align: right;
+    vertical-align: top;
+    margin-top: 75px;
     
 }
 .social-btn {
